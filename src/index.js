@@ -4,7 +4,41 @@
 //- idade
 //- tipo (ex: guerreiro, mago, monge, ninja )
 
+class hero {
+    constructor (name, age, type){
+        this.name = name
+        this.age = age
+        this.type = type
+        
+        let power = ""
+        this.power = power
 
+        if (this.type = "mago"){
+        power = "usou magia"
+    }
+
+        else if (this.type = "guerreiro"){
+        power = "espada"
+    }
+
+         else if (this.type = "monje"){
+        power = "artes marciais"
+    }
+
+         else if (this.type = "ninja"){
+        power = "shuriken"
+    }
+
+        else {
+        power = "nada"
+    }
+
+        escrever(){
+        console.log (`O ${this.type} atacou usando ${this.power}`)}
+        
+    
+    }
+}
 
 //Além disso, deve ter um método chamado atacar que deve atender
 // os seguientes requisitos:
@@ -19,7 +53,8 @@
 //se monge -> no ataque exibir (usou artes marciais)
 //se ninja -> no ataque exibir (usou shuriken)
 
-
+let person = new hero ("Diogo", 25, "mago")
 
 //Saída: Ao final deve se exibir uma mensagem:
 //- "o {tipo} atacou usando {ataque}"
+person.escrever()
