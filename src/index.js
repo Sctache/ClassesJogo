@@ -13,31 +13,30 @@ class hero {
         let power = ""
         this.power = power
 
-        if (this.type = "mago"){
-        power = "usou magia"
+        if (this.type === "mago"){
+        this.power = "magia";
     }
 
-        else if (this.type = "guerreiro"){
-        power = "espada"
+        else if (this.type === "guerreiro"){
+        this.power = "espada";
     }
 
-         else if (this.type = "monje"){
-        power = "artes marciais"
+         else if (this.type === "monje"){
+        this.power = "artes marciais";
     }
 
-         else if (this.type = "ninja"){
-        power = "shuriken"
+         else if (this.type === "ninja"){
+        this.power = "shuriken";
     }
 
         else {
-        power = "nada"
+        this.power = "nada";
     }
-
-        escrever(){
-        console.log (`O ${this.type} atacou usando ${this.power}`)}
-        
+}
+    escrever(){
     
-    }
+    console.log (`O ${this.type} atacou usando ${this.power}`)
+}
 }
 
 //Além disso, deve ter um método chamado atacar que deve atender
@@ -53,8 +52,12 @@ class hero {
 //se monge -> no ataque exibir (usou artes marciais)
 //se ninja -> no ataque exibir (usou shuriken)
 
-let person = new hero ("Diogo", 25, "mago")
+let person = new hero ("Diogo", 25, "guerreiro");
+let person2 = new hero ("Sookie", 19, "ninja");
+let person3 = new hero ("Mary", 69, "metamorfo")
 
 //Saída: Ao final deve se exibir uma mensagem:
 //- "o {tipo} atacou usando {ataque}"
 person.escrever()
+person2.escrever()
+person3.escrever ()
